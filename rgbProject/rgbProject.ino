@@ -5,16 +5,17 @@
  *
  * For more detail (instruction and wiring diagram), visit https://esp32io.com/tutorials/esp32-rgb-led
  */
-
+// stores which pins are being used as a variable
 #define PIN_RED    23 // GPIO23
 #define PIN_GREEN  22 // GPIO22
 #define PIN_BLUE   21 // GPIO21
-
+// gets the pins ready to output energy
 void setup() {
   pinMode(PIN_RED,   OUTPUT);
   pinMode(PIN_GREEN, OUTPUT);
   pinMode(PIN_BLUE,  OUTPUT);
 }
+
 
 void loop() {
   // color code #00C9CC (R = 0,   G = 201, B = 204)
