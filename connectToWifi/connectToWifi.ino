@@ -1,7 +1,7 @@
 
 // connecting to a wifi network with a esp32 is very simple requiring very few lines of code.
 
-// the first step is to import the WiFi liobrary which gives you access to all the functions you need.
+// the first step is to import the WiFi library which gives you access to all the functions you need.
 #include <WiFi.h>
 void setup() {
   Serial.begin(115200);
