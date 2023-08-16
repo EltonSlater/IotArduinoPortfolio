@@ -1,6 +1,5 @@
 int ledPin = 2;   //defines the pin connected to the led
 
-
 void setup() {
   // sets pin d2 up redy for output
   pinMode(ledPin, OUTPUT);
