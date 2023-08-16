@@ -1,6 +1,6 @@
 // defines the pin connected to the led
 int ledpin = 4;
-// defines the pin connecte to the switch
+// defines the pin connected to the switch
 int switchpin = 2;
 
 void setup() {\
@@ -16,7 +16,7 @@ void loop() {
   {
     digitalWrite(ledpin, HIGH);
   }
-  // checks if d4 isnt reciving energy and if it isnt turns off d2
+  // checks if d4 isnt receiving energy and if it isnt turns off d2
   if(digitalRead(switchpin) != HIGH)
   {
     digitalWrite(ledpin, LOW);
