@@ -5,10 +5,12 @@
  *
  * For more detail (instruction and wiring diagram), visit https://esp32io.com/tutorials/esp32-rgb-led
  */
+
 // stores which pins are being used as a variable
 #define PIN_RED    23 // GPIO23
 #define PIN_GREEN  22 // GPIO22
 #define PIN_BLUE   21 // GPIO21
+
 // gets the pins ready to output energy
 void setup() {
   pinMode(PIN_RED,   OUTPUT);
@@ -16,7 +18,8 @@ void setup() {
   pinMode(PIN_BLUE,  OUTPUT);
 }
 
-
+// loop cycles through three colours changing every seconds
+// each pin corresponds to a different wire on the led and when the voltage is changed the brightness of that colour is changed
 void loop() {
   // color code #00C9CC (R = 0,   G = 201, B = 204)
   analogWrite(PIN_RED,   0);

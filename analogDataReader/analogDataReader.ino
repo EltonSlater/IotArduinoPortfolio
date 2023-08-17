@@ -13,7 +13,7 @@ void setup() {
 void loop() {
   // print the amount of power being recieved at the pin d2
   Serial.println(analogRead(inputpin));
-  // pauses the code for 100 milliseconds
+  // pauses the code for 100 milliseconds so the code doesnt print to the console an unnecassary amount of times 
   delay(100);
 
 }
